@@ -1,2 +1,6 @@
 import Users from "./userModel";
-export default Users 
+import posts from "./postModel";
+export {
+    Users,
+    posts
+}

@@ -69,7 +69,5 @@ const UserSchema = new mongoose.Schema(
     },
     { timestamps: true }
 );
-
-// const User = await user.findOne({ where: { ...attributes } });
 const user = mongoose.model("User", UserSchema);
 export default user;

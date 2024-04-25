@@ -7,8 +7,7 @@ import ITokenDetails from "../../utils/commonFunction/ITokenDetails";
 import { statusCode } from "../../utils/commonFunction/constant";
 import { response } from "express";
 import ErrorMessageEnum from "../../utils/enums/ErrorMessageEnum";
-import { request } from "http";
-import Users from "../../models";
+
 
 const commonFun = new CommonFunction(bcrypt, jwt);
 
@@ -78,7 +77,7 @@ async function update(data: IUserServices.ICreateUserRequest, id: string) {
 
 // delete
 
-async function deleteUser(data:any) {
+async function deleteUser(data: any) {
     try {
         const user = await User.findById(data.id)
 
